@@ -1,0 +1,117 @@
+/* PROGRAM */
+h2 {
+    text-align: center;
+    padding-top: 70px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+body{
+    background: linear-gradient(rgb(183, 132, 183),rgb(142, 122, 181));
+}
+
+p {
+    text-align: center;
+}
+
+.program_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    column-gap: 5rem;
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: 20px;
+    padding-bottom: 35px;
+}
+
+.program_card {
+    background-color: rgba(255, 237, 133, 0.5);
+    padding: 2rem;
+    border: 5px ridge;
+    border-radius: 50px;
+    
+}
+
+.program_title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.program_description {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+    text-align: left;
+}
+
+/* SIGN UP */
+.form_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#reservationForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    box-shadow: 0 0 20px rgba(251, 244, 255, 0.281);
+}
+
+.SelectField,
+.ReserveField {
+    border: 10px groove #3a0231;
+    padding: 10px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+}
+/* BUTTON */
+#signupbuttons,
+#buttons {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+#signupbuttons input:hover,
+#buttons input:hover {
+    background-color: rgb(172, 32, 190);
+}
+
+#signupbuttons input:active,
+#buttons input:active {
+    background-color: #f7deff;
+}
+
+input[type='submit'],
+input[type='reset'] {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 0.5em;
+    background-color: rgb(202, 141, 252);
+    color: black;
+    border-radius: 20px;
+    align-items: center;
+}

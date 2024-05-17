@@ -1,0 +1,188 @@
+
+
+h2{
+  text-align: center;
+  margin-top: 100px;
+
+}
+
+header{
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(to bottom, #ff5e88, #ff9966);
+}
+h1 {
+  font-weight: 600;
+  font-size: large;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+h1 a{
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 a:hover{
+  text-decoration: underline;
+  color: #3d0472;
+}
+
+
+h3 {
+  font-weight: 600;
+}
+.calendar {
+  margin: auto;
+  width: 98%;
+  max-width: 800px;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.calendar header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calendar nav {
+  display: flex;
+  align-items: center;
+}
+.calendar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.calendar ul li {
+  width: calc(100% / 7);
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+#prev,
+#next {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+#prev::before,
+#next::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  border-color: #ccc;
+}
+#next::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#prev::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+#prev:hover::before,
+#next:hover::before {
+  border-color: #000;
+}
+.days {
+  font-weight: 600;
+}
+.dates li.today {
+  color: #fff;
+}
+.dates li.today::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+}
+.dates li.inactive {
+  color: #ccc;
+}
+
+/* TESTIMONIES */
+
+.testimony-container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  column-gap: 5rem;
+  padding: 100px;
+  padding-top: 50px;
+}
+
+.testimonial-card {
+  background-color: rgba(146, 255, 200, 0.5);
+  padding: 1.5rem 2rem;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  width: 95%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-shape {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 80%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  justify-self: center;
+}
+
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+}
+
+.main-section {
+  padding: 20px; /* Add padding to create space around the table */
+}
+
+.main-section table {
+  width: calc(100% - 70px); /* Adjust width to create space on both sides */
+  border-collapse: collapse;
+  margin: 20px auto; /* Center the table horizontally with top and bottom margin */
+}
+
+.main-section th,
+.main-section td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.main-section th {
+  background-color: #f2f2f2;
+}
+
+.main-section td a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main-section td a:hover {
+  text-decoration: underline;
+}

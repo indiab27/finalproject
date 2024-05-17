@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link href="resetcss.css" rel="stylesheet" />
+    <link href="aboutuscss.css" rel="stylesheet" />
+    <link href="membershipcss.css" rel="stylesheet" />
+    <script src="validationjs.js" defer></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home_page.html">Welcome!</a></li>
+            <li><a href="Schedule_page.html">Schedule</a></li>
+            <li><a href="Membership.html">Sign up!</a></li>
+            <li><a href="Menu.html" class="split">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h2>Join the Mania today!</h2>
+<div class="container">
+    <div class="program_container grid">
+        <article class="program_card">
+            <h3 class="program_title">Starter Spark</h3>
+            <p><em>Start your fitness journey with a spark!</em></p>
+            <hr>
+            <h4>Features:</h4>
+            <ol class="feature_description">
+                <li>Access to introductory classes</li>
+                <li>Limited gym facility access during specified hours</li>
+                <li>Basic fitness assessment</li>
+                <li>Option to upgrade to paid plans at any time</li>
+            </ol>
+            <h4 class="price">Free for 30 days</h4>
+            <div class="signupbuttons">
+                <br>
+                <input type="submit" value="Sign-up">
+            </div>
+        </article>
+
+        <article class="program_card">
+            <h3 class="program_title">Adrenaline Rush</h3>
+            <p><em>Unleash your potential with unlimited access!</em></p>
+            <hr>
+            <h4>Features:</h4>
+            <ol class="feature_description">
+                <li>Unlimited access to all gym facilities</li>
+                <li>Unlimited attendance to all classes</li>
+                <li>Ability to book classes in advance</li>
+                <li>Option to cancel membership with one month's notice</li>
+            </ol>
+            <h4 class="price">$15 per month</h4>
+            <div class="signupbuttons">
+                <br>
+                <input type="submit" value="Sign-up">
+            </div>
+        </article>
+
+        <article class="program_card">
+            <h3 class="program_title">Vitality Pulse</h3>
+            <p><em>Stay ahead with priority access and exclusive benefits!</em></p>
+            <hr>
+            <h4>Features:</h4>
+            <ol class="feature_description">
+                <li>Priority class booking</li>
+                <li>Exclusive access to workshops and events</li>
+                <li>Discounts on merchandise and additional services</li>
+                <li>Personalized fitness consultation with a trainer</li>
+            </ol>
+            <h4 class="price">$90 every 6 months</h4>
+            <div class="signupbuttons">
+                <br>
+                <input type="submit" value="Sign-up">
+            </div>
+        </article>
+
+        <article class="program_card">
+            <h3 class="program_title">Euphoria Elite</h3>
+            <p><em>Experience the ultimate fitness luxury!</em></p>
+            <hr>
+            <h4>Features:</h4>
+            <ol class="feature_description">
+                <li>Best value and savings compared to monthly plans</li>
+                <li>Unlimited access to all classes and gym facilities</li>
+                <li>Member-exclusive events and socials</li>
+                <li>Complimentary fitness assessments and goal tracking with a trainer</li>
+            </ol>
+            <h4 class="price">$180 per year</h4>
+            <div class="signupbuttons">
+                <br>
+                <input type="submit" value="Sign-up">
+            </div>
+        </article>
+    </div>
+</div>
+<br>
+
+<!-- SIGN UP FORM -->
+<h2>Sign-up here</h2>
+<br>
+<div class="form_container">
+    <form id="reservationForm" name="reservationForm" action="submit.html">
+        <fieldset id="creditCardInfo">
+            <!-- CARD SELECT -->
+            <div class="SelectField">
+                <label>Credit Card*</label>
+                <fieldset id="cards">
+                    <label class="cardLabel">
+                        <input name="credit" value="amex" type="radio" required>
+                        <span>American Express</span>
+                    </label>
+                    <label class="cardLabel">
+                        <input name="credit" value="discover" type="radio">
+                        <span>Discover</span>
+                    </label>
+                    <label class="cardLabel">
+                        <input name="credit" value="master" type="radio">
+                        <span>MasterCard</span>
+                    </label>
+                    <label class="cardLabel">
+                        <input name="credit" value="visa" type="radio">
+                        <span>Visa</span>
+                    </label>
+                </fieldset>
+                <br>
+                <label for="gymMembership">Select your plan:</label>
+                <select name="gymMembership" id="gymMembership">
+                    <option value="" selected disabled>Select a Plan</option>
+                    <option value="None">Starter Spark ($0 for 30 days)</option>
+                    <option value="15.00">Adrenaline Rush ($15 for 30 days)</option>
+                    <option value="90.00">Vitality Pulse ($90 every 6 months)</option>
+                    <option value="180.00">Euphoria Elite ($180 per year)</option>
+                </select>
+            </div>
+            <br>
+            <!-- FORM GRID -->
+            <div class="formGrid">
+                <!-- CC NUMBER -->
+                <div class="ReserveField">
+                    <label for="cardNumber">Credit Card Number*</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+                </div>
+                <!-- CC EXPIRATION DATE -->
+                <div class="ReserveField">
+                    <label for="expMonth">Expiration Date*</label>
+                    <select name="expMonth" id="expMonth" required>
+                        <option value="" selected disabled>Select Expiration Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <span id="separator"> / </span>
+                    <select id="expYear" name="expYear" required>
+                        <option value="" selected disabled>Select Expiration Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
+                <!-- CC CVC NUMBER -->
+                <div class="ReserveField">
+                    <label for="cvc">CVC*</label>
+                    <input type="text" name="cvc" id="cvc" required pattern="^\d{3,4}$">
+                </div>
+                <!-- NAME ON CARD -->
+                <div class="ReserveField">
+                    <label for="cardName">Name On Card*</label>
+                    <input name="cardName" id="cardName" required type="text">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset id="personalInfo">
+            <!-- FIRST NAME -->
+            <div class="ReserveField">
+                <label for="firstName">First Name*</label>
+                <input name="firstName" id="firstName" type="text" required>
+            </div>
+            <!-- LAST NAME -->
+            <div class="ReserveField">
+                <label for="lastName">Last Name*</label>
+                <input name="lastName" id="lastName" type="text" required>
+            </div>
+            <!-- ADDRESS -->
+            <div class="ReserveField">
+                <label for="address">Address*</label>
+                <input name="address" id="address" type="text" required>
+            </div>
+            <!-- GENDER -->
+            <div class="ReserveField">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="" selected disabled>Select a Gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="non-binary">Non Binary</option>
+                    <option value="N/A">Prefer not to say</option>
+                </select>
+            </div>
+            <!-- EMAIL -->
+            <div class="ReserveField">
+                <label for="email">E-mail*</label>
+                <input name="email" id="email" type="email" required>
+            </div>
+            <!-- PHONE NUMBER -->
+            <div class="ReserveField">
+                <label for="phoneNumber">Phone Number*</label>
+                <input name="phoneNumber" id="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required>
+            </div>
+        </fieldset>
+
+        <!-- SUBMIT BUTTONS -->
+        <div class="buttons">
+            <input type="submit" value="Submit for Reservation">
+            <input type="reset" value="Cancel">
+        </div>
+    </form>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="Home_page.html">Home</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="Membership.html">Membership</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>15 Bridge Park Dr, Brooklyn Heights, NY 11201</p>
+            <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+            <p>Email:<a href="mailto:info@gymmania.com">info@gymmania.com</a></p>
+            <p>Open 24 Hours, 7 Days out of the week!</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Gym Mania. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+  .navbar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    transition: background-color 0.3s ease;
+  }
+
+  li{
+    list-style: none;
+  }
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ff968fe3;
+    color: black;
+  }
+
+  /* Create a right-aligned (split) link inside the navigation bar */
+  .navbar a.split {
+    float: right;
+    background-color: #e442fa;
+    color: white;
+  }
+
+  .site-footer {
+    background-color: #fdd9e5;
+    color: #000000;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links,
+.footer-contact {
+    flex: 1 0 200px;
+    max-width: 200px;
+   
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    color: black;
+    
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer-links ul li a , .footer-contact p a{
+  text-decoration: none;
+  color:#87329c;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+}
